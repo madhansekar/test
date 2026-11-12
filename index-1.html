@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SlideAlign | We've moved</title>
+  <meta name="description" content="SlideAlign has moved to a new web address. Visit our new site." />
+  <style>
+    :root {
+      --brand: #5146c7;
+      --brand-dark: #39319a;
+      --ink: #202235;
+      --muted: #686b7c;
+      --surface: #ffffff;
+      --page: #f5f6fb;
+      --line: #e6e8f0;
+    }
+    * { box-sizing: border-box; }
+    html, body { min-height: 100%; margin: 0; }
+    body {
+      display: flex; flex-direction: column;
+      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--ink); background: var(--page);
+    }
+    .site-header {
+      min-height: 76px; display: flex; align-items: center;
+      padding: 0 clamp(20px, 6vw, 76px); background: var(--surface);
+      border-bottom: 1px solid var(--line);
+    }
+    .brand {
+      font-size: 25px; letter-spacing: -1px; font-weight: 750;
+      color: #27283b; text-decoration: none;
+    }
+    .brand span { color: var(--brand); font-style: italic; }
+    main {
+      flex: 1; display: grid; place-items: center;
+      padding: 56px 20px;
+    }
+    .notice {
+      width: min(100%, 620px); background: var(--surface);
+      border: 1px solid var(--line); border-radius: 18px;
+      padding: clamp(28px, 6vw, 52px); text-align: center;
+      box-shadow: 0 12px 36px rgba(30, 35, 75, .06);
+    }
+    .icon {
+      width: 68px; height: 68px; margin: 0 auto 24px;
+      display: grid; place-items: center; border-radius: 50%;
+      color: var(--brand); background: #eeedff;
+    }
+    .icon svg { width: 34px; height: 34px; }
+    .eyebrow {
+      margin: 0 0 12px; color: var(--brand); font-size: 12px;
+      font-weight: 750; letter-spacing: 1.6px; text-transform: uppercase;
+    }
+    h1 { margin: 0; font-size: clamp(28px, 5vw, 40px); line-height: 1.18; letter-spacing: -1px; }
+    .message {
+      max-width: 460px; margin: 18px auto 0; color: var(--muted);
+      font-size: 16px; line-height: 1.7;
+    }
+    .actions { margin-top: 30px; }
+    .button {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 48px; padding: 0 25px; border-radius: 9px;
+      background: var(--brand); color: #fff; text-decoration: none;
+      font-weight: 650; transition: background .15s ease, transform .15s ease;
+    }
+    .button:hover { background: var(--brand-dark); transform: translateY(-1px); }
+    .help { margin: 22px 0 0; color: var(--muted); font-size: 13px; line-height: 1.6; }
+    .help a { color: var(--brand); font-weight: 600; text-decoration: none; }
+    .site-footer {
+      padding: 22px clamp(20px, 6vw, 76px); background: #fff;
+      border-top: 1px solid var(--line); color: var(--muted);
+      font-size: 13px; text-align: center; line-height: 1.6;
+    }
+    .site-footer a { color: var(--brand); text-decoration: none; font-weight: 600; }
+    @media (max-width: 480px) {
+      .site-header { min-height: 64px; }
+      .notice { border-radius: 14px; }
+      .site-footer { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="SlideAlign home">Slide<span>Align</span></a>
+  </header>
+
+  <main>
+    <section class="notice" aria-labelledby="notice-title">
+      <div class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 3h7v7"></path><path d="M21 3 10 14"></path>
+          <path d="M18 13v5a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3h5"></path>
+        </svg>
+      </div>
+      <p class="eyebrow">Important update</p>
+      <h1 id="notice-title">SlideAlign has moved</h1>
+      <p class="message">
+        We’ve migrated SlideAlign to a new web address. Please use the new link
+        below to access the application. Update your bookmarks to make sure you
+        continue using the latest site.
+      </p>
+      <div class="actions">
+        <!-- Replace NEW_URL_HERE with the actual production URL before publishing. -->
+        <a class="button" href="NEW_URL_HERE">Go to the new SlideAlign site <span aria-hidden="true">&nbsp;→</span></a>
+      </div>
+      <p class="help">
+        Having trouble accessing the site? Contact us at
+        <a href="tel:+18139375225">813.937.5225</a> for assistance.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>© <span id="year">2026</span> SlideAlign. All rights reserved.</div>
+    <div>Contact us at <a href="tel:+18139375225">813.937.5225</a> for concerns related to your Service Request Assignment.</div>
+  </footer>
+</body>
+</html>
