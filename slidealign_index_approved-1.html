@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SlideAlign | Important Update</title>
+  <meta name="description" content="SlideAlign has moved to a new web address.">
+  <style>
+    :root {
+      --purple: #5146c7;
+      --purple-dark: #4035aa;
+      --ink: #25263a;
+      --muted: #686b7c;
+      --page: #f6f7fb;
+      --border: #e5e7ef;
+      --white: #fff;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      min-height: 100vh; display: flex; flex-direction: column;
+      font-family: "Segoe UI", Inter, Arial, sans-serif;
+      color: var(--ink); background: var(--page);
+    }
+    header {
+      height: 76px; display: flex; align-items: center;
+      padding: 0 clamp(22px, 6vw, 72px); background: var(--white);
+      border-bottom: 1px solid var(--border);
+    }
+    .logo { text-decoration: none; color: #25263a; font-size: 25px; font-weight: 750; letter-spacing: -1px; }
+    .logo .slide { color: var(--purple); }
+    .logo .align { font-style: italic; }
+    main { flex: 1; display: grid; place-items: center; padding: 48px 20px; }
+    .notice {
+      width: min(100%, 560px); padding: clamp(28px, 5vw, 48px);
+      background: var(--white); border: 1px solid var(--border); border-radius: 16px;
+      box-shadow: 0 10px 35px rgba(30, 34, 70, .06); text-align: center;
+    }
+    .notice-icon {
+      width: 58px; height: 58px; display: grid; place-items: center;
+      margin: 0 auto 18px; border-radius: 50%; color: var(--purple);
+      background: #eeedff;
+    }
+    .notice-icon svg { width: 29px; height: 29px; }
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 8px 14px; border-radius: 999px; margin-bottom: 16px;
+      background: #eeedff; color: var(--purple); font-size: 12px;
+      font-weight: 750; letter-spacing: 1.2px;
+    }
+    .badge svg { width: 16px; height: 16px; }
+    h1 { margin: 0; font-size: clamp(27px, 4.5vw, 36px); line-height: 1.2; letter-spacing: -.8px; }
+    .description {
+      margin: 16px auto 24px; max-width: 440px; color: var(--muted);
+      font-size: 15px; line-height: 1.7;
+    }
+    .actions { display: flex; flex-direction: column; gap: 11px; }
+    .button {
+      display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+      width: 100%; min-height: 46px; padding: 12px 18px; border-radius: 8px;
+      font: inherit; font-size: 14px; font-weight: 650; text-decoration: none; cursor: pointer;
+      transition: background .15s ease, transform .15s ease;
+    }
+    .button-primary { background: var(--purple); color: #fff; border: 1px solid var(--purple); }
+    .button-primary:hover { background: var(--purple-dark); transform: translateY(-1px); }
+    .button-secondary { background: #fff; color: var(--purple); border: 1px solid var(--purple); }
+    .button-secondary:hover { background: #f5f3ff; }
+    .button svg { width: 18px; height: 18px; flex-shrink: 0; }
+    .bookmark-help {
+      margin: 13px 0 0; padding: 12px; border-radius: 8px;
+      color: var(--ink); background: #f3f1ff; font-size: 13px; line-height: 1.6; text-align: left;
+    }
+    .bookmark-help[hidden] { display: none; }
+    .support { margin: 18px 0 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+    .support a, footer a { color: var(--purple); font-weight: 650; text-decoration: none; }
+    footer {
+      padding: 18px clamp(22px, 6vw, 72px); background: var(--white);
+      border-top: 1px solid var(--border); color: var(--muted);
+      text-align: center; font-size: 12px; line-height: 1.7;
+    }
+    @media (max-width: 480px) {
+      header { height: 64px; }
+      main { padding: 28px 14px; }
+      .notice { padding: 28px 22px; }
+      footer { padding: 16px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="logo" href="#" aria-label="SlideAlign"><span class="slide">Slide</span><span class="align">Align</span></a>
+  </header>
+
+  <main>
+    <section class="notice" aria-labelledby="notice-title">
+      <div class="notice-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 3h7v7"></path><path d="M21 3 10 14"></path><path d="M18 13v5a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3h5"></path>
+        </svg>
+      </div>
+      <div class="badge" aria-label="Important update">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M3 9v6h4l5 4V5L7 9H3z"></path>
+          <path d="M15 8.5a5 5 0 0 1 0 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+          <path d="M17.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+        IMPORTANT UPDATE
+      </div>
+      <h1 id="notice-title">SlideAlign has moved</h1>
+      <p class="description">
+        We’ve migrated SlideAlign to a new web address. Please use the new link below
+        to access the application. Update your bookmarks to make sure you continue
+        using the latest site.
+      </p>
+      <div class="actions">
+        <!-- Replace NEW_URL_HERE with the actual new production URL. -->
+        <a class="button button-primary" href="NEW_URL_HERE">
+          Go to the new SlideAlign site
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 3h7v7"></path><path d="M21 3 10 14"></path><path d="M18 13v5a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3h5"></path>
+          </svg>
+        </a>
+        <button class="button button-secondary" id="bookmark-button" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18l-6-4-6 4z"></path>
+          </svg>
+          Bookmark the new site
+        </button>
+      </div>
+      <p class="bookmark-help" id="bookmark-help" role="status" aria-live="polite" hidden></p>
+      <p class="support">Having trouble accessing the site? Contact us at
+        <a href="tel:+18139375225">813.937.5225</a> for assistance.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div>© 2026 SlideAlign. All rights reserved.</div>
+    <div>Contact us at <a href="tel:+18139375225">813.937.5225</a> for concerns related to your Service Request Assignment.</div>
+  </footer>
+
+  <script>
+    (function () {
+      const button = document.getElementById("bookmark-button");
+      const message = document.getElementById("bookmark-help");
+      button.addEventListener("click", function () {
+        const ua = navigator.userAgent || "";
+        if (/iPhone|iPad|iPod/i.test(ua)) {
+          message.textContent = "To bookmark the new site in Safari: open the new SlideAlign site, tap Share, then choose Add Bookmark.";
+        } else if (/Android/i.test(ua)) {
+          message.textContent = "To bookmark the new site: open it using the button above, tap your browser’s ⋮ menu, then choose Add bookmark (or tap the star).";
+        } else if (/Macintosh|Mac OS/i.test(ua)) {
+          message.textContent = "To bookmark the new site: open it using the button above, then press Command (⌘) + D and save the bookmark.";
+        } else {
+          message.textContent = "To bookmark the new site: open it using the button above, then press Ctrl + D or use your browser’s bookmark menu and save the bookmark.";
+        }
+        message.hidden = false;
+      });
+    }());
+  </script>
+</body>
+</html>
